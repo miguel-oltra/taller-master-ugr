@@ -20,3 +20,4 @@ The folowing sentenc constains four typos
 
 ## Exercise 5 - Pull Request and peer review practice with verified committer
 
+## Excersise 6
