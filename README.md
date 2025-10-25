@@ -3,7 +3,6 @@ A repository to showcase how GitHub works to master students
 # Exercise
 ## Exercise 1 - Clone remote repository
   * Goto the following [link to configure SSH credentials](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-  * Then clone the repository into your laptop
 
   ```git clone git@github.com:miguel-oltra/taller-master-ugr.git```
   
