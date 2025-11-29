@@ -145,5 +145,156 @@ Welcome to the Intermediate level! These exercises will teach you about merging,
 - You can fetch and push to specific remotes
 - You understand when multiple remotes are useful (forks, backups, upstream)
 
+---
+
+## 📤 Submitting Your Work
+
+### Congratulations on completing the Intermediate Level! 🎉
+
+You've mastered merging, conflict resolution, and advanced remote operations. Time to document your achievements!
+
+### Step 1: Create Your Outcome Branch
+
+From the intermediate branch, create your group's outcome branch:
+
+```bash
+git checkout intermediate
+git checkout -b group-X-outcomes/intermediate
+```
+
+### Step 2: Document Your Outcomes
+
+1. **Get the template**:
+   ```bash
+   git checkout main -- OUTCOME_TEMPLATE.md
+   cp OUTCOME_TEMPLATE.md OUTCOMES.md
+   ```
+
+2. **Complete `OUTCOMES.md`** with:
+   
+   **Exercise 1 - Merging & Conflicts**:
+   - Commands used to create branches and make conflicting changes
+   - Output from `git merge` showing the conflict
+   - The conflict markers you saw in your file
+   - How you resolved the conflict
+   - `git log --graph --oneline --all` showing merge commit
+   
+   **Exercise 2 - Tags & Stashing**:
+   - Commands for creating annotated tags
+   - Output from `git tag` and `git show v1.0`
+   - Demonstration of stash workflow
+   - Output from `git stash list` and `git stash show`
+   
+   **Exercise 3 - Multiple Remotes**:
+   - Output from `git remote -v` before and after adding remotes
+   - Commands for adding, renaming, removing remotes
+   - Demonstration of fetch/push to specific remotes
+   - Explanation of when multiple remotes are useful
+
+3. **Document your challenges**:
+   - How did you approach your first merge conflict?
+   - Any confusion about when to use stash vs. commit?
+   - Difficulties understanding remote tracking?
+   - What resources did you use to solve problems?
+
+4. **Reflect deeply**:
+   - How does merge conflict resolution work?
+   - When would you use tags in a real project?
+   - Why is stash useful instead of always committing?
+   - Real-world scenarios for multiple remotes (forks, open source, etc.)
+
+### Step 3: Commit Your Documentation
+
+```bash
+git add OUTCOMES.md
+git commit -m "docs: Add intermediate level exercise outcomes for Group X"
+```
+
+### Step 4: Push to Remote
+
+```bash
+git push origin group-X-outcomes/intermediate
+```
+
+### Step 5: Create Pull Request (If Required)
+
+Submit a PR with title: "Outcomes: Group X - Intermediate Level"
+
+### What to Include
+
+✅ **Exercise 1 Requirements**:
+- At least 2 branches with conflicting changes
+- Screenshot or output showing conflict markers
+- Resolution strategy explained
+- Merge commit in git log
+- `git log --graph` showing branch structure
+
+✅ **Exercise 2 Requirements**:
+- At least 1 annotated tag created
+- Tag information with `git show`
+- Stash workflow demonstration (save, list, pop)
+- Example scenario where stash was useful
+
+✅ **Exercise 3 Requirements**:
+- At least 2 remotes configured
+- All remote management commands demonstrated
+- Explanation of fetch vs. pull
+- Real-world use case for multiple remotes
+
+✅ **General Requirements**:
+- Complete command history with outputs
+- Screenshots of complex operations (optional)
+- Detailed problem-solving narratives
+- Reflection (minimum 150 words)
+- Self-assessment for all intermediate topics
+
+### Evaluation Criteria
+
+| Criterion | Weight | Key Focus for Intermediate Level |
+|-----------|--------|----------------------------------|
+| Completion | 20% | All 3 exercises with full documentation |
+| Understanding | 25% | Merge strategies, conflict resolution, remote concepts |
+| Practical Skills | 25% | Clean conflict resolution, proper tag/stash usage |
+| Problem-Solving | 20% | How you debugged conflicts and remote issues |
+| Documentation | 10% | Clear explanations of complex operations |
+
+**Minimum score to advance to Master level**: 75/100
+
+### Common Challenges to Document
+
+💡 **Merge Conflicts**:
+- How did you identify which changes to keep?
+- Did you accidentally break code during resolution?
+- How did you verify the merge was correct?
+
+💡 **Tags vs. Branches**:
+- Can you explain when to use each?
+- Did you try pushing tags? What happened?
+
+💡 **Stash Confusion**:
+- Did stash pop cause any conflicts?
+- When would stash apply be better than pop?
+
+💡 **Remote Tracking**:
+- What's the difference between `git fetch` and `git pull`?
+- How do tracking branches work?
+
+### Tips for Success
+
+📝 Document conflicts BEFORE resolving them (screenshot!)  
+📝 Save git log output at key points  
+📝 Explain your thought process, not just commands  
+📝 Connect concepts to real-world scenarios  
+📝 Show both successes and mistakes  
+
+### Resources
+
+- Merge conflicts: https://git-scm.com/docs/git-merge
+- Tags: https://git-scm.com/book/en/v2/Git-Basics-Tagging
+- Stash: https://git-scm.com/docs/git-stash
+- Remotes: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+---
+
 **Next Steps**: Once you've mastered these skills, move to the `master` branch for advanced Git techniques including rewriting history, advanced branching strategies, and Git hooks!
 
