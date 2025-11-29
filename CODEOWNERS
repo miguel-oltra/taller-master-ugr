@@ -1,0 +1,190 @@
+# CODEOWNERS File for Git Training Repository
+#
+# This file defines code ownership and automatic review request assignments.
+# Each line is a file pattern followed by one or more owners.
+#
+# Code owners are automatically requested for review when someone opens a pull request
+# that modifies files they own. When branch protection requires code owner reviews,
+# the pull request cannot be merged until a code owner approves it.
+#
+# More information: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# ==============================================================================
+# GLOBAL OWNERSHIP
+# ==============================================================================
+# Default owner for everything in the repository unless a later match takes precedence
+* @miguel-oltra
+
+# ==============================================================================
+# DOCUMENTATION & TEMPLATES (Main Branch)
+# ==============================================================================
+# Core documentation files require instructor review
+/README.md @miguel-oltra
+/MODEL_SPEC.MD @miguel-oltra
+/EVALUATION_CRITERIA.md @miguel-oltra
+/INSTRUCTOR_GUIDE.md @miguel-oltra
+/OUTCOME_TEMPLATE.md @miguel-oltra
+/SUMMARY.md @miguel-oltra
+
+# ==============================================================================
+# NEWBIE LEVEL - Basic Git Skills Team
+# ==============================================================================
+# Files in newbie branch or newbie-related paths
+# Review team: Instructors who evaluate basic Git competency
+# Trainees working on newbie exercises will need approval from this team
+
+# Pattern matches branches like: newbie, group-*-outcomes/newbie, feature/newbie-*
+/newbie/** @miguel-oltra @newbie-reviewers
+*.newbie.* @miguel-oltra @newbie-reviewers
+
+# ==============================================================================
+# INTERMEDIATE LEVEL - Collaboration Skills Team
+# ==============================================================================
+# Files in intermediate branch or intermediate-related paths
+# Review team: Instructors who evaluate collaboration and conflict resolution
+# Trainees must demonstrate merge conflict resolution skills
+
+/intermediate/** @miguel-oltra @intermediate-reviewers
+*.intermediate.* @miguel-oltra @intermediate-reviewers
+
+# ==============================================================================
+# MASTER LEVEL - Advanced Git Team
+# ==============================================================================
+# Files in master branch or master-related paths
+# Review team: Senior instructors who evaluate advanced techniques
+#
+# ⚠️ IMPORTANT FOR TRAINEES:
+# This is where trainees will discover that their pull requests for the
+# "Advanced branching strategies" exercise REQUIRE code owner approval.
+# This is intentional - understanding code ownership is part of mastering
+# professional Git workflows (Git Flow, GitHub Flow).
+#
+# Trainees should:
+# 1. Attempt to merge their branching strategy implementation
+# 2. Discover they need code owner approval
+# 3. Research CODEOWNERS files and their role in Git workflows
+# 4. Request proper reviews following the workflow they're implementing
+# 5. Understand how this integrates with branch protection rules
+
+/master/** @miguel-oltra @master-reviewers @git-flow-experts
+*.master.* @miguel-oltra @master-reviewers @git-flow-experts
+
+# Specific files related to branching strategies exercise
+# These require explicit approval from Git Flow experts
+*git-flow* @git-flow-experts
+*github-flow* @git-flow-experts
+*branching-strategy* @git-flow-experts
+
+# ==============================================================================
+# MASTER OF THE UNIVERSE LEVEL - Security & Governance Team
+# ==============================================================================
+# Files in master-of-the-universe branch or related paths
+# Review team: Security experts who evaluate enterprise practices
+# Requires signed commits and security-aware reviews
+
+/master-of-the-universe/** @miguel-oltra @security-team @governance-team
+*.master-of-the-universe.* @miguel-oltra @security-team
+
+# Security-sensitive files require security team review
+/security-artifacts/** @security-team
+*.asc @security-team
+*.gpg @security-team
+.gitignore @security-team
+
+# GitHub Actions workflows require governance review (CI/CD security)
+/.github/workflows/** @governance-team @security-team
+
+# Hook scripts require security review (execution risk)
+/hooks/** @security-team
+
+# ==============================================================================
+# GROUP OUTCOME BRANCHES
+# ==============================================================================
+# Student outcome submissions require appropriate level reviewers
+# Pattern matches: group-A-outcomes/newbie, group-B-outcomes/master, etc.
+
+# Newbie outcomes
+group-*-outcomes/newbie/** @miguel-oltra @newbie-reviewers
+
+# Intermediate outcomes
+group-*-outcomes/intermediate/** @miguel-oltra @intermediate-reviewers
+
+# Master outcomes - requires advanced reviewers
+group-*-outcomes/master/** @miguel-oltra @master-reviewers @git-flow-experts
+
+# Master of Universe outcomes - requires security review
+group-*-outcomes/master-of-the-universe/** @miguel-oltra @security-team @governance-team
+
+# OUTCOMES.md files at any level require instructor review
+**/OUTCOMES.md @miguel-oltra
+
+# ==============================================================================
+# SPECIAL FILES
+# ==============================================================================
+# Files that affect repository governance require multiple approvals
+
+# This CODEOWNERS file itself requires admin approval to change
+/CODEOWNERS @miguel-oltra
+
+# Branch protection documentation
+/ProtectionRules.md @miguel-oltra @governance-team
+
+# Evaluation criteria changes require instructor consensus
+/EVALUATION_CRITERIA.md @miguel-oltra @newbie-reviewers @intermediate-reviewers @master-reviewers @security-team
+
+# ==============================================================================
+# EXERCISE-SPECIFIC PATTERNS
+# ==============================================================================
+# Patterns that help enforce specific exercise requirements
+
+# Any rebase or history rewriting artifacts (Master level)
+*rebase* @master-reviewers
+*amend* @master-reviewers
+
+# GPG/signing related files (Master of Universe level)
+*gpg* @security-team
+*signed* @security-team
+*signature* @security-team
+
+# Branch protection or security configuration files
+*protection* @governance-team @security-team
+*branch-rules* @governance-team
+
+# ==============================================================================
+# TEAMS REFERENCE
+# ==============================================================================
+#
+# GitHub Teams that should be created in the organization:
+#
+# @miguel-oltra              - Repository owner and lead instructor
+# @newbie-reviewers          - Team reviewing basic Git exercises
+# @intermediate-reviewers    - Team reviewing collaboration exercises
+# @master-reviewers          - Team reviewing advanced Git techniques
+# @git-flow-experts          - Specialists in branching strategies (CRITICAL for discovery exercise)
+# @security-team             - Security experts for Master of Universe level
+# @governance-team           - Repository governance and policy enforcers
+#
+# Note: If using personal repository instead of organization, replace team names
+# with individual GitHub usernames (e.g., @reviewer1, @reviewer2)
+#
+# ==============================================================================
+# LEARNING OBJECTIVE
+# ==============================================================================
+#
+# This CODEOWNERS file is designed to create a "discovery moment" for trainees:
+#
+# When working on the Master level "Advanced branching strategies" exercise,
+# trainees will implement Git Flow or GitHub Flow. When they attempt to merge
+# their work, they'll encounter CODEOWNERS requirements.
+#
+# This teaches them:
+# 1. Code ownership is part of professional Git workflows
+# 2. Branch protection and code ownership work together
+# 3. Pull request workflows in enterprise environments
+# 4. How to identify and request appropriate reviewers
+# 5. The connection between Git Flow/GitHub Flow and code review processes
+#
+# The file is intentionally NOT documented in the exercise instructions,
+# requiring trainees to research and understand it independently.
+#
+# ==============================================================================
