@@ -71,3 +71,30 @@ THEN ensure that each outcome branch contains:
   - A reflection on what they learned and any challenges faced during the exercises.
 
 THEN evolve the README.md file in the main branch and the exercises branches to include a section on how alumni can create and submit their outcome branches for review.
+
+## PROMPT 3 - Branch protection rules to configure in GitHub repository for each exercise level branch
+GIVEN  the MODEL_SPEC.MD file that describes the purpose and specification of a Git training repository with different levels of exercises
+WHEN  configuring branch protection rules in the GitHub repository for each exercise level branch
+THEN  apply the following branch protection rules:
+    - For the `newbie` branch:
+        - Require pull request reviews before merging.
+        - Require status checks to pass before merging (e.g., successful completion of exercises).
+    
+    - For the `intermediate` branch:
+        - Require pull request reviews before merging.
+        - Require status checks to pass before merging.
+        - Enforce linear history to prevent merge commits.
+    
+    - For the `master` branch:
+        - Require pull request reviews before merging.
+        - Require status checks to pass before merging.
+        - Enforce linear history.
+        - Require signed commits to ensure authenticity.
+    
+    - For the `master-of-the-universe` branch:
+        - Require pull request reviews before merging.
+        - Require status checks to pass before merging.
+        - Enforce linear history.
+        - Require signed commits.
+        - Restrict who can push to the branch to only specific team members or maintainers.
+THEN  document these branch protection rules in the repository's ProtectionRules.md file to inform trainees of the requirements for each exercise level branch.
