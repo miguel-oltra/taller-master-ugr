@@ -98,3 +98,11 @@ THEN  apply the following branch protection rules:
         - Require signed commits.
         - Restrict who can push to the branch to only specific team members or maintainers.
 THEN  document these branch protection rules in the repository's ProtectionRules.md file to inform trainees of the requirements for each exercise level branch.
+
+## PROMPT 4 - CODEOWNERS file to configure in GitHub repository for each exercise level branch
+GIVEN  the MODEL_SPEC.MD file that describes the purpose and specification of a Git training repository with different levels of exercises
+WHEN  configuring the CODEOWNERS file in the GitHub repository for each exercise level branch, consider to get a master exercise not being able to complete (Advanced branching strategies (Git Flow, GitHub Flow)), so the trainee needs to pass the exercise by understanding that the code owner needs to review and approve the changes before they can be merged into the protected branches. Notice that in the training the CODEOWNERS file is not part of the content to be learned by the trainees, so I want then to discover it by themselves as part of the training.
+THEN  ensure that each team mentioned in the CODEOWNERS file has the appropriate permissions to review and approve changes to their respective exercise level branches.
+THEN  create a CODEOWNERS file in the root directory of the repository to meet the WHEN condition.
+THEN do not modify any other file in the repository except the CODEOWNERS file.
+
