@@ -5,7 +5,7 @@ This repository is designed to help master students develop professional Git ski
 
 ## 📚 Training Structure
 
-This repository contains exercises across **four difficulty levels**, each in its own branch. Choose the branch that matches your current skill level or work through them progressively.
+This repository contains exercises across **four difficulty levels**, each in its own branch. You must complete all exercises in each branch before progressing to the next level. After finishing a level, create an outcome branch to document and submit your work for evaluation.
 
 ### 🌱 Newbie Level
 **Branch**: `newbie`  
@@ -15,7 +15,7 @@ This repository contains exercises across **four difficulty levels**, each in it
 - Creating and switching branches
 - Basic remote operations (push, pull)
 
-**Start here if**: You're new to Git or need a refresher on the basics.
+**You MUST start here**: We consider you new to Git or need a refresher on the basics.
 
 ```bash
 git checkout newbie
@@ -30,7 +30,7 @@ git checkout newbie
 - Stashing changes
 - Working with multiple remotes (adding/removing remotes)
 
-**Start here if**: You're comfortable with basic Git but want to learn collaboration workflows.
+**Continue here**: You're now comfortable with basic Git but need to deepen your understanding of collaboration workflows.
 
 ```bash
 git checkout intermediate
@@ -44,7 +44,7 @@ git checkout intermediate
 - Advanced branching strategies (Git Flow, GitHub Flow)
 - Using Git hooks for automation
 
-**Start here if**: You want to master advanced Git techniques used in professional environments.
+**Now is time for a level up. Continue here**: You want to master advanced Git techniques used in professional environments.
 
 ```bash
 git checkout master
@@ -58,7 +58,7 @@ git checkout master
 - Security best practices (GPG signing, managing sensitive data)
 - Verified commits and security auditing
 
-**Start here if**: You're ready for enterprise-level Git security and governance practices.
+**Now is time for a level up. Continue here**: You want to master advanced Git techniques used in professional environments.
 
 ```bash
 git checkout master-of-the-universe
