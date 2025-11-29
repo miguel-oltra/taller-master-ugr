@@ -118,12 +118,111 @@ However, feel free to jump to any level that matches your current knowledge.
 | Master | 3 | 3-4 hours | Advanced techniques & automation |
 | Master of the Universe | 2 | 2-3 hours | Security & governance |
 
+## 📤 Submitting Your Work
+
+After completing your exercises, you must submit your work for evaluation by creating an outcome branch.
+
+### Branch Naming Convention
+
+Create a branch following this pattern:
+```
+group-[X]-outcomes/[level]
+```
+
+**Examples**:
+- `group-A-outcomes/newbie`
+- `group-B-outcomes/intermediate`
+- `group-C-outcomes/master`
+- `group-D-outcomes/master-of-the-universe`
+
+### Submission Steps
+
+1. **Complete all exercises** in your chosen level branch
+
+2. **Create your outcome branch** from the exercise branch:
+   ```bash
+   # Example for Group A completing newbie level
+   git checkout newbie
+   git checkout -b group-A-outcomes/newbie
+   ```
+
+3. **Copy and complete the outcome template**:
+   ```bash
+   cp OUTCOME_TEMPLATE.md OUTCOMES.md
+   # Edit OUTCOMES.md with your information
+   ```
+
+4. **Document your work** in `OUTCOMES.md`:
+   - Summary of each exercise completed
+   - Commands used with their outputs
+   - Screenshots or logs demonstrating your work
+   - Challenges faced and how you solved them
+   - Personal reflection on what you learned
+
+5. **Commit your outcome documentation**:
+   ```bash
+   git add OUTCOMES.md
+   git commit -m "docs: Add outcomes for [level] level exercises"
+   ```
+
+6. **Push your outcome branch** to the remote:
+   ```bash
+   git push origin group-A-outcomes/newbie
+   ```
+
+7. **Create a Pull Request** (if required by your instructor):
+   - Go to the repository on GitHub
+   - Create a PR from your outcome branch to `main`
+   - Add a clear title: "Outcomes: Group A - Newbie Level"
+   - Add any additional comments or questions
+
+### Required Documentation
+
+Your `OUTCOMES.md` file must include:
+
+✅ **Exercise Summaries**: Brief description of what you accomplished  
+✅ **Commands & Outputs**: All key commands with their results  
+✅ **Evidence**: Screenshots, logs, or commit hashes  
+✅ **Challenges**: Problems faced and solutions found  
+✅ **Reflection**: What you learned and how you'll apply it  
+✅ **Self-Assessment**: Your confidence rating for each topic  
+
+### Evaluation Criteria
+
+Your work will be assessed based on:
+
+1. **Completion of Exercises** (20%) - Did you finish all exercises?
+2. **Understanding of Concepts** (25%) - Do you understand the "why" behind commands?
+3. **Practical Application** (25%) - Did you use commands correctly and efficiently?
+4. **Problem-Solving Skills** (20%) - How well did you handle challenges?
+5. **Security Practices** (10%) - For Master of the Universe level only
+
+See `EVALUATION_CRITERIA.md` for detailed rubric.
+
+### Tips for Success
+
+💡 **Be thorough**: Document everything, even small wins  
+💡 **Be honest**: Share real challenges, not just successes  
+💡 **Be reflective**: Show what you learned, not just what you did  
+💡 **Be clear**: Use proper formatting and organization  
+💡 **Be professional**: Treat this like a work portfolio  
+
+### Need Help?
+
+- Check the `OUTCOME_TEMPLATE.md` for guidance
+- Review `EVALUATION_CRITERIA.md` to understand expectations
+- Ask your instructor if you have questions
+- Collaborate with your group members
+
+---
+
 ## 🤝 Contributing
 
 This is a training repository. Students should:
 - Create feature branches for their work
 - Practice proper commit messages
 - Use Pull Requests for collaboration exercises
+- Submit outcomes using the standardized process above
 
 ## 📝 License
 
