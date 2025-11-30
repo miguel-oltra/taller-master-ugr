@@ -5,6 +5,8 @@
 # ==============================================================================
 # Model specification file containing instructor notes and prompts
 MODEL_SPEC.MD
+SUMMARY.md
+INSTRUCTOR_GUIDE.md
 
 # ==============================================================================
 # IDE and Editor Files
