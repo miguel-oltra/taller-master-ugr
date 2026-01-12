@@ -27,6 +27,7 @@ git tag -a #creating a tag
 git tag #to show the tags
 git show #to check a tag
 git push #to push the changes to the repository
+git log #to view commit hashes
 # etc.
 ```
 
@@ -106,35 +107,42 @@ Rate your confidence level for each topic (1-5, where 5 is very confident):
 ## 🔗 Evidence/Artifacts
 
 **Links to branches/commits**:
-- Link to your outcome branch: `https://github.com/miguel-oltra/taller-master-ugr/tree/group-X-outcomes/[level]`
+- Link to your outcome branch: `https://github.com/N2G00/taller-master-ugr/tree/group-02-outcomes/intermediate`
 - Key commits demonstrating your work:
-  - Commit hash: [Short description]
-  - Commit hash: [Short description]
+- 53d07d87072d3ad858670bd2e8ed350693c826cf: [Merge footer with resolved conflicts]
+- db67cd4560b4ac904b2c274d5f30d3904855ebcf: [screenshots]
+- 53d07d87072d3ad858670bd2e8ed350693c826cf: [First stable version with merged features]
+- 53d07d87072d3ad858670bd2e8ed350693c826cf: [Merge footer with resolved conflicts]
+- Commit hash: [Short description]
 
 **Additional files created** (if any):
-- File 1: [Description]
-- File 2: [Description]
+- Folder: screenshots
+- File 1: add commit.png
+- File 2: creating branches.png
+- File 3: merge.png
+- File 4: tags.png
 
 ---
 
 ## ✅ Completion Checklist
 
 Before submitting, ensure you have:
-- [ ] Completed the exercise for your chosen level (including all parts)
-- [ ] Documented all commands used with their outputs
-- [ ] Described challenges and how you resolved them
-- [ ] Provided a thoughtful reflection on your learning
-- [ ] Self-assessed your confidence in each topic
-- [ ] Pushed your outcome branch to the remote repository
-- [ ] Created a Pull Request (if required by your instructor)
+- [x] Completed the exercise for your chosen level (including all parts)
+- [x] Documented all commands used with their outputs
+- [x] Described challenges and how you resolved them
+- [x] Provided a thoughtful reflection on your learning
+- [x] Self-assessed your confidence in each topic
+- [x] Pushed your outcome branch to the remote repository
+- [x] Created a Pull Request (if required by your instructor)
 
 ---
 
 ## 📝 Additional Comments
 
-[Any additional thoughts, questions, or feedback about the exercises]
+the exercice is very well organized, I learned a lot
+a udemy course also helped me to grasp those commands
 
 ---
 
-**Submission Date**: [Date]  
-**Ready for Review**: ✅ Yes / ❌ No
+**Submission Date**: [12/01/2026]  
+**Ready for Review**: ✅ Yes
