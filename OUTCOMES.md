@@ -293,8 +293,7 @@ Rate your confidence level for each topic (1-5, where 5 is very confident):
   - Commit hash: [Short description]
 
 **Additional files created** (if any):
-- File 1: [Description]
-- File 2: [Description]
+screenshots folder
 
 ---
 
