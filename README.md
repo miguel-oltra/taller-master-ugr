@@ -176,6 +176,10 @@ git push origin group-X-outcomes/master
 - Git log showing commit SHAs before and after amend
 - Explanation of how amend rewrites history
 
+✅ **Part 2 Requirements**:
+- Interactive rebase with at least 4 operations (pick, squash, fixup, reword, etc.)
+- Before and after git log comparison
+- Documentation of what each rebase operation does
 
 ✅ **Part 3 Requirements**:
 - Complete demonstration of rebasing a feature branch
