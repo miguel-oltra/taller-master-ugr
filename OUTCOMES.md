@@ -134,9 +134,16 @@ git commit --amend -m "Add complete configuration file"
 Date: Mon Jan 12 13:44:43 2026 +0100
 1 file changed, 2 insertions(+)
 create mode 100644 config.txt
-   - Comparison of commit SHAs to show history was rewritten
-from 144d8e2 to 5d5d0b0
 
+for amend 2 : please view on screenshots folder amend2.1.ping and amend2.2.png
+for amend 3 : please view on screenshots folder amend3.png
+
+   - Comparison of commit SHAs to show history was rewritten
+first amend :from 144d8e2 to 5d5d0b0
+second amend : f927298d71ea6fb74279441b924167763136c993 to 6f92c4ae7b6d53c95b7ee895a870f3458790a4f0 ( please view on screenshots folder amend2.1.ping and amend2.2.png)
+third amend : 6f92c4ae7b6d53c95b7ee895a870f3458790a4f0 to dce2c3a2463b1883ad85122f356c4ccbd450be0a ( please view screenshots amend3.png)
+
+so basically amend function helps with replacing the commit id with a new clean one
    **Part 2 - Interactive Rebase**:
    - Commands and editor interactions for interactive rebase
 the command : git rebase -i HEAD~3
